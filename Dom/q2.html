@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+   <script>
+      // q2 Fix the by inserting the missing element
+      // 3 step
+      // 1. get all li element
+      let uolist=document.querySelector("ul");
+      let liElem=document.querySelectorAll("li");
+      //2. create li elm
+      let sevenLiElm=document.createElement("li");
+      sevenLiElm.innerText="7";
+      //3.insert before <li>8</li> element
+      let eightElm=liElem[6];
+      //what to insert ,before which element to insert
+      uolist.insertBefore(sevenLiElm,eightElm);
+      console.log(uolist);
+
+   </script>
+
+
+</body>
+</html>

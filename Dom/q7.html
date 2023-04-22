@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q7</title>
+    <style>
+        #pass {
+            display: block;
+            margin: auto;
+            margin-top: 10rem;
+            width: 25rem;
+            height: 3rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 3rem;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <input type="text" id="pass"></input> -->
+    <h1>Input box</h1>
+    <input type="text" id="pass"></input>
+    <!-- <input type="text" id="pass"></input> -->
+    <p>CapsLock is on!</p>
+    <!-- <P style="display:none"> CapsLock is on! </p> -->
+
+    <script>
+        //Q- Write a script which keeps checking the password being entered.
+      //It should check if capslock is on or off
+      //if its on it should not allow to type and show "caps on" on screen,
+      // also it should only allow to type if the shift in pressed down.
+        let inputBox=document.querySelector("#pass");
+        let message=document.querySelector("p");
+
+        inputBox.addEventListener("keydown",function(e){
+           // boolean , wether capslock is on (true) or off (false)
+            if(e.getModifierState("CapsLock")){
+                message.style.display="block"; 
+                e.preventDefault();
+            }
+            else {
+                message.style.display="none";
+            }
+
+           // e.preventDefault();
+        })
+
+    </script>
+    
+</body>
+
+</html>
