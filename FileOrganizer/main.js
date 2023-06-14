@@ -1,5 +1,10 @@
 // node main.js tree "D:\full stack wd\fjp-1\FileOrganizer"
+//node main.js tree "D:/full stack wd/fjp-1/FileOrganizer"
+// node main.js tree "D:\full stack wd\Frontend\FileOrganizer\downloads"
+
 // node main.js organize "D:\full stack wd\fjp-1\FileOrganizer\downloads"
+// node main.js organize "D:/full stack wd/fjp-1/FileOrganizer/downloads"
+
 // node main.js help
 
 // let helpFn=require("./help");

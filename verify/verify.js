@@ -42,15 +42,40 @@
 // delete car.model;
 // console.log(car.model);
 
-// //car.startEngine();
+// // //car.startEngine();
 
-function outer(){
-    var k=5;
-    inner();
-    function inner(){
-        console.log(b);
+// function outer(){
+//     var k=5;
+//     inner();
+//     function inner(){
+//         console.log(b);
+//     }
+// }
+// const b=10;
+// outer();
+// console.log(k);
+// var name ="suraj";
+// var obj={
+//     name:"singh",
+//     QuestionMaking(){
+//         console.log(this.name);
+//     }
+// }
+
+// var fun=obj.QuestionMaking;
+// fun();
+
+
+var x=1;
+function square(){
+    let cb= function () {
+        console.log(this.x * this.x);
     }
+    setTimeout(cb,2000);
 }
-const b=10;
-outer();
-console.log(k);
+
+var obj={
+    x:3,
+    square
+};
+obj.square();

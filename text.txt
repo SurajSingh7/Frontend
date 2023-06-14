@@ -1,0 +1,54 @@
+I solved following code problem which were interesting/challenging.
+
+1.Javascript: TO display any folder tree like structure.(Used recursion to implement tree command)
+              intput ->  path(like-D:\full stack wd\Frontend\FileOrganizer\downloads)
+              output->  downloads
+                           ├── abc.zip
+                           ├── app.exe
+                           ├── f1.txt
+                           └──Organized_Folder
+                                 └──documents
+                                       ├── f1.txt
+                                 └──images
+                                       ├── pic.png
+                                 └──miscellaneous
+                                        ├── suraj.pk
+                           ├── pic.png
+                           ├── songs.mp3
+                           ├── suraj2.pk
+    
+
+2.Javascript : a. Closure + setTimeout (input-output based questions).
+               b. Hoisting + scope chain,this (input-output based questions).
+               ex- input -> var x=1;
+                            function square(){
+                               let cb= function () {
+                                      console.log(this.x * this.x);
+                                    }
+                                setTimeout(cb,2000);
+                           }
+
+                         var obj={
+                                   x:3,
+                                   square
+                           };
+                          obj.square();
+
+                    output -> 1 (imp *in brower).
+
+
+3.Java: Given unsorted integer array arr,find smallest missing postive integer.
+        v.v.imp( must be tc->O(n), sc->O(1) ). 
+
+
+4.Java: Swap sort Algorithm(It is not sorting algorithm but very imp algo for if integer given 0 to n (n->arr.length) in questions
+        then we can solve very easy way through Swap sort with tc->O(n) ,sc->O(1) ).
+
+
+5.Java: a. Given an array(like-arr), find next greater element for every element(if no greater element exist -> -1).
+           input - arr[]=[3,6,1,10]
+           output -[6,10,10,-1]
+           note-(v.v.imp  Sc->O(1),Tc-O(n)).
+
+
+

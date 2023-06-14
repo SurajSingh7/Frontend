@@ -36,5 +36,8 @@ module.exports = {
   tree: treeFn,
 };
 
-// let srcPath="D:/full stack wd/fjp-1/FileOrganizer";
+//   let srcPath="D:/full stack wd/fjp-1/FileOrganizer";
+// //  let srcPath="D:\full stack wd\fjp-1\FileOrganizer";
+// console.log("hii")
+
 // treeFn(srcPath);
